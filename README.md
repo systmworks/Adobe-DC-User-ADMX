@@ -1,2 +1,49 @@
-# Adobe-DC-User-ADMX
-User context ADMX templates for Adobe DC (Reader and Acrobat)
+<p align="center"><a href="https://buymeacoffee.com/systmworks"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="45" alt="Buy me a coffee"></a></p>
+
+> I have spent many, many hours creating and testing this ADMX. If it helps you please consider buying me a Coffee :)
+
+# Adobe DC ADMX/ADML Documentation
+
+## Quick Links
+
+| ![Page](https://img.shields.io/badge/Page-316dca?style=flat-square) | ![Description](https://img.shields.io/badge/Description-316dca?style=flat-square) |
+|------|-------------|
+| [Reader DC Settings](reader-settings.md) | Complete list of all Reader DC policies |
+| [Acrobat DC Settings](acrobat-settings.md) | Complete list of all Acrobat DC policies |
+| [Security Hardening](security-hardening.md) | Recommended and optional security configurations |
+| [Reduce Nags & Upsells](reduce-nags.md) | Settings to suppress unwanted messages, popups, and promotions |
+| [Screenshots](screenshots.md) | GPMC and Intune screenshots showing policy configuration |
+| [Changelog](changelog.md) | Settings changes across ADMX versions |
+
+These user-scope ADMX/ADML templates (v1.4) provide Group Policy and Intune management of **per-user** Adobe Acrobat DC and Adobe Reader DC preferences on Windows. They define `HKCU` policies (see `AdobeDC_User.admx` / `AdobeDC_User.adml`), not machine-level `HKLM` lockable templates.
+
+Policy list pages and the hardening / reduce-nags guides use the **GoodSetting** column from the HKCU preference source used to build these templates: **Set to Enabled** or **Set to Disabled** refers to the Group Policy policy state, mapping to the per-policy ``RegValEnabled`` / ``RegValDisabled`` DWORDs.
+
+| ![File](https://img.shields.io/badge/File-316dca?style=flat-square) | ![Scope](https://img.shields.io/badge/Scope-316dca?style=flat-square) | ![Policies](https://img.shields.io/badge/Policies-316dca?style=flat-square) |
+|------|-------|----------|
+| `AdobeDC_User.admx` + ADML | User (`HKCU`) - Acrobat DC + Reader DC | 484 REG_DWORD (250 Acrobat + 234 Reader) |
+
+## Important Notes
+
+| ![Note](https://img.shields.io/badge/Note-316dca?style=flat-square) |
+|------|
+| Acrobat Reader (x64) using the new **Unified Installer** runs ``Acrobat.exe``, so it requires configuration of the **Acrobat** settings rather than the Reader settings. To be safe, configure both. |
+| Several ``bToggle*`` policies use inverted registry values (DWORD 0 = feature ON, DWORD 1 = feature OFF). The ADMX templates handle this so that the Group Policy **Enabled**/**Disabled** states match the FriendlyName intent, but raw registry checks may look counterintuitive. |
+
+## Category Overview
+
+| ![Category](https://img.shields.io/badge/Category-316dca?style=flat-square) | ![Overview](https://img.shields.io/badge/Overview-316dca?style=flat-square) | ![Reader](https://img.shields.io/badge/Reader-316dca?style=flat-square) | ![Acrobat](https://img.shields.io/badge/Acrobat-316dca?style=flat-square) |
+|----------|----------|:------:|:-------:|
+| Context, Tools & Search |  | 19 | 22 |
+| Documents, Editing & Accessibility |  | 86 | 89 |
+| Security: Execution & Protection |  | 7 | 13 |
+| Security: Trust & Permissions |  | 71 | 72 |
+| Sharing & Features |  | 9 | 11 |
+| Startup & Experience |  | 29 | 29 |
+| Updates & Desktop Integration |  | 11 | 11 |
+| Upsell |  | 2 | 3 |
+
+
+---
+
+**Sharing & responsibility** — Built for the community, shared with good intentions. Use at your own risk. The author accepts no responsibility for any outcomes resulting from the use of these files. Always verify registry paths and values, and test in a safe environment first. If you find an issue or have a suggestion, contributions are welcome.
