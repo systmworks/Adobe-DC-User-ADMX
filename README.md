@@ -34,14 +34,14 @@ Policy list pages and the hardening / reduce-nags guides use the **GoodSetting**
 
 | ![Category](https://img.shields.io/badge/Category-316dca?style=flat-square) | ![Overview](https://img.shields.io/badge/Overview-316dca?style=flat-square) | ![Reader](https://img.shields.io/badge/Reader-316dca?style=flat-square) | ![Acrobat](https://img.shields.io/badge/Acrobat-316dca?style=flat-square) |
 |----------|----------|:------:|:-------:|
-| Context, Tools & Search |  | 19 | 22 |
-| Documents, Editing & Accessibility |  | 86 | 89 |
-| Security: Execution & Protection |  | 7 | 13 |
-| Security: Trust & Permissions |  | 71 | 72 |
-| Sharing & Features |  | 9 | 11 |
-| Startup & Experience |  | 29 | 29 |
-| Updates & Desktop Integration |  | 11 | 11 |
-| Upsell |  | 2 | 3 |
+| Context, Tools & Search | Cursor and selection tools, hand-tool behavior, filename-as-title, recent files, Modern Viewer/HUD, search, and workflow UI preferences under HKCU. | 19 | 22 |
+| Documents, Editing & Accessibility | Page display, zoom and layout defaults, rendering and fonts, commenting, forms, measurement, accessibility color replacement, and editing-related user preferences. | 86 | 89 |
+| Security: Execution & Protection | User-level execution controls such as 3D/multimedia trust, JavaScript debugger and menu behavior, FIPS mode, and related HKCU security execution settings. | 7 | 13 |
+| Security: Trust & Permissions | Digital signatures, certificate and timestamp validation, OCSP/CRL behavior, trust-manager URL permissions, and other HKCU signing and trust preferences. | 71 | 72 |
+| Sharing & Features | Collaboration, Send & Track, shared reviews, cloud sharing hooks, and related feature toggles stored as per-user preferences. | 9 | 11 |
+| Startup & Experience | Splash screen, launch alerts, onboarding and What's New dialogs, home-screen widgets, notifications, and first-run experience controls. | 29 | 29 |
+| Updates & Desktop Integration | Product updater behavior, browser and Fast Web View integration, background download, thumbnails/shell integration, and desktop UI preferences. | 11 | 11 |
+| Upsell | Upgrade prompts, trial purchase dialogs, promotional surfaces, App Center visibility, and purchasable-tool upsell controls. | 2 | 3 |
 
 
 ---
