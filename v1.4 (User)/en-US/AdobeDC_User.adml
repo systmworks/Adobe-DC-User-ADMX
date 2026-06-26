@@ -1092,6 +1092,5 @@
       <string id="bScanAppInstalled_User">Scan App Promo</string>
       <string id="bScanAppInstalled_User_Explain">Specifies whether to show the Adobe Scan mobile app promotion and link in the Home banner.&#10;&#10;Disable and lock both the App Center and Home banner with bToggleDCAppCenter under FeatureLockDown. Possible values include: 0: Promote the mobile app. 1: Don't promote the mobile app.</string>
     </stringTable>
-    <presentationTable />
   </resources>
 </policyDefinitionResources>
