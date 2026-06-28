@@ -6,7 +6,7 @@
 
 # Security Hardening Guide
 
-Recommended and optional security-related **Group Policy** states for the v1.5 user (`HKCU`) ADMX templates. Rows are generated from the **GoodSetting** column in the preference source for these templates, using each policy's `RegValEnabled` / `RegValDisabled` mapping.
+Recommended and optional security-related **Group Policy** states for the v1.6 user (`HKCU`) ADMX templates. Rows are generated from the **GoodSetting** column in the preference source for these templates, using each policy's `RegValEnabled` / `RegValDisabled` mapping.
 
 These complement (but do not replace) Adobe's own [Application Security Guide](https://www.adobe.com/devnet-docs/acrobatetk/tools/AppSec/index.html).
 
@@ -22,8 +22,11 @@ These complement (but do not replace) Adobe's own [Application Security Guide](h
 | Security: Execution & Protection | FIPS Mode | ``DC\AVGeneral`` | Set to ![Enabled](https://img.shields.io/badge/Enabled-238636?style=flat-square) | STIG ARDC-CN-000345 (V-213193) Medium; STIG AADC-CN-000955 (V-245874) Medium | ![Recommended](https://img.shields.io/badge/Recommended-238636?style=flat-square) |
 | Security: Execution & Protection | JS Global Security | ``DC\JSPrefs`` | Set to ![Enabled](https://img.shields.io/badge/Enabled-238636?style=flat-square) |   | ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) |
 | Security: Execution & Protection | JS Menu Items | ``DC\JSPrefs`` | Set to ![Disabled](https://img.shields.io/badge/Disabled-f85149?style=flat-square) |   | ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) |
+| Security: Execution & Protection | Outlook Protected View | ``DC\TrustManager`` | Set to ![Enabled](https://img.shields.io/badge/Enabled-238636?style=flat-square) |   | ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) |
 | Security: Trust & Permissions | Accept Expired Timestamps | ``Security\cAdobe_TSPProvider`` | Set to ![Disabled](https://img.shields.io/badge/Disabled-f85149?style=flat-square) |   | ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) |
 | Security: Trust & Permissions | Allow LiveCycle HTTP | ``Security\cEDC`` | Set to ![Disabled](https://img.shields.io/badge/Disabled-f85149?style=flat-square) |   | ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) |
+| Security: Trust & Permissions | Open Non-PDF Attachments | ``DC\Originals`` | Set to ![Disabled](https://img.shields.io/badge/Disabled-f85149?style=flat-square) |   | ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) |
+| Security: Trust & Permissions | Secure Open Attachments | ``DC\Originals`` | Set to ![Enabled](https://img.shields.io/badge/Enabled-238636?style=flat-square) |   | ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) |
 
 ## Acrobat DC
 
@@ -37,6 +40,8 @@ These complement (but do not replace) Adobe's own [Application Security Guide](h
 | Security: Execution & Protection | Outlook Protected View | ``DC\TrustManager`` | Set to ![Enabled](https://img.shields.io/badge/Enabled-238636?style=flat-square) |   | ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) |
 | Security: Trust & Permissions | Accept Expired Timestamps | ``Security\cAdobe_TSPProvider`` | Set to ![Disabled](https://img.shields.io/badge/Disabled-f85149?style=flat-square) |   | ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) |
 | Security: Trust & Permissions | Allow LiveCycle HTTP | ``Security\cEDC`` | Set to ![Disabled](https://img.shields.io/badge/Disabled-f85149?style=flat-square) |   | ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) |
+| Security: Trust & Permissions | Open Non-PDF Attachments | ``DC\Originals`` | Set to ![Disabled](https://img.shields.io/badge/Disabled-f85149?style=flat-square) |   | ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) |
+| Security: Trust & Permissions | Secure Open Attachments | ``DC\Originals`` | Set to ![Enabled](https://img.shields.io/badge/Enabled-238636?style=flat-square) |   | ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) |
 
 ---
 

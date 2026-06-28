@@ -6,7 +6,7 @@
 
 # Reduce Nags, Upsells & Unwanted Notifications
 
-Suggested **Group Policy** states to reduce onboarding prompts, tooltips, upsells, and similar UI noise in the v1.5 user (`HKCU`) ADMX templates. Rows come from the **GoodSetting** column in the preference source for non-security categories.
+Suggested **Group Policy** states to reduce onboarding prompts, tooltips, upsells, and similar UI noise in the v1.6 user (`HKCU`) ADMX templates. Rows come from the **GoodSetting** column in the preference source for non-security categories.
 
 ## Reader DC
 

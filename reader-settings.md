@@ -6,7 +6,7 @@
 
 # Reader DC Settings
 
-Complete list of 234 Reader DC user (`HKCU`) policies in the v1.5 `AdobeDC_User` ADMX templates, sorted by category. **Suggested GPO** reflects the **GoodSetting** value from the same preference source where present.
+Complete list of 240 Reader DC user (`HKCU`) policies in the v1.6 `AdobeDC_User` ADMX templates, sorted by category. **Suggested GPO** reflects the **GoodSetting** value from the same preference source where present.
 
 ## Context, Tools & Search
 
@@ -123,6 +123,14 @@ Complete list of 234 Reader DC user (`HKCU`) policies in the v1.5 `AdobeDC_User`
 | XFA Email Client | ``iEmailClientSelection`` |   | Specifies the email client to use when submitting an XFA form. |
 | XObjects View Mode | ``iRXOPolicy`` |   | Sets XObject access to either Never (0), Always (1), or Only PDF/X-5 Compliant Ones (2). |
 
+## Microsoft Purview (MIP)
+
+| ![FriendlyName](https://img.shields.io/badge/FriendlyName-316dca?style=flat-square) | ![ValueName](https://img.shields.io/badge/ValueName-316dca?style=flat-square) | ![Suggested GPO](https://img.shields.io/badge/Suggested%20GPO-316dca?style=flat-square) | ![Summary](https://img.shields.io/badge/Summary-316dca?style=flat-square) |
+|---|---|---|---|
+| MIP Logging | ``bEnableLogging`` |   | Enable debug logging for Microsoft Purview Information Protection operations. |
+| MIP Policy Authentication | ``bEnablePolicyAuthentication`` |   | Specifies whether MIP policy authentication is enabled for the current user. |
+| Show Document Message Bar (MIP) | ``bShowDMB`` |   | Show Microsoft Purview Information Protection label information in the document message bar. |
+
 ## Security: Execution & Protection
 
 | ![FriendlyName](https://img.shields.io/badge/FriendlyName-316dca?style=flat-square) | ![ValueName](https://img.shields.io/badge/ValueName-316dca?style=flat-square) | ![Suggested GPO](https://img.shields.io/badge/Suggested%20GPO-316dca?style=flat-square) | ![Summary](https://img.shields.io/badge/Summary-316dca?style=flat-square) |
@@ -133,6 +141,7 @@ Complete list of 234 Reader DC user (`HKCU`) policies in the v1.5 `AdobeDC_User`
 | FIPS Mode | ``bFIPSMode`` | Set to ![Enabled](https://img.shields.io/badge/Enabled-238636?style=flat-square) | Turns FIPS mode on and off thereby requiring stronger encryption algorithm and limiting certain application behavior. |
 | JS Global Security | ``bEnableGlobalSecurity`` | Set to ![Enabled](https://img.shields.io/badge/Enabled-238636?style=flat-square) | Controls whether or not a script in one sandbox can access a script object in another sandbox. |
 | JS Menu Items | ``bEnableMenuItems`` | Set to ![Disabled](https://img.shields.io/badge/Disabled-f85149?style=flat-square) | Toggles off and on JavaScript's ability to execute menu items. |
+| Outlook Protected View | ``bEnableAlwaysOutlookAttachmentProtectedView`` | Set to ![Enabled](https://img.shields.io/badge/Enabled-238636?style=flat-square) | Specifies whether Protected View is turned off for Outlook attachments. |
 | Recent Files Migrated | ``bOldRecentFilesMigrated`` |   | Indicates whether the recent files list has been migrated. |
 
 ## Security: Trust & Permissions
@@ -176,6 +185,7 @@ Complete list of 234 Reader DC user (`HKCU`) policies in the v1.5 `AdobeDC_User`
 | OCSP Nonce Behavior | ``iSendNonce`` |   | Specifies signature validation behavior with respect to nonces. |
 | OCSP Responder URL | ``iURLToConsult`` |   | Specifies how the revocation checker chooses which responder to use. |
 | OCSP Response Freshness | ``iResponseFreshness`` |   | Specifies the amount of time in minutes after the response's published thisUpdate time for which the response will be valid. |
+| Open Non-PDF Attachments | ``bAllowOpenFile`` | Set to ![Disabled](https://img.shields.io/badge/Disabled-f85149?style=flat-square) | Open non-PDF attachments in their native application. |
 | Preview Before Signing | ``bPreviewModeBeforeSigning`` |   | Specifies whether a signer is forced to use preview mode during signing. |
 | Require AKI in CRL | ``bRequireAKI`` |   | Specifies whether the Authority Key Identifier extension must be present in a CRL. |
 | Require OCSP Cert Hash | ``bRequireOCSPCertHash`` |   | Specifies whether a certificate public key hash extension must be present in OCSP responses. |
@@ -188,6 +198,7 @@ Complete list of 234 Reader DC user (`HKCU`) policies in the v1.5 `AdobeDC_User`
 | RSA-PSS Salt Length | ``iRSAPSSSaltLength`` |   | Specifies the Salt Length the RSA-PSS algorithm uses. |
 | RSA-PSS Signing | ``bEnableRSAPSSSigning`` |   | Specifies whether a signature should be created with the RSA-PSS algorithm. |
 | Save Certified Alert | ``iDigSigSaveAsCertified`` |   |  |
+| Secure Open Attachments | ``bSecureOpenFile`` | Set to ![Enabled](https://img.shields.io/badge/Enabled-238636?style=flat-square) | Allow opening attachments which are not PDF. |
 | Self-Sign ID Create | ``bSelfSignCertGen`` |   | Specifies whether or not the Create a self-signed ID option in Add ID workflows is available. |
 | Show All Chains | ``bShowAllChains`` |   | Show all chains in the Certificate Viewer. |
 | Show Document Warnings | ``iShowDocumentWarnings`` |   | Specifies whether a button to allow reviewing document warnings shows up on the signing dialog. |

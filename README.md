@@ -15,13 +15,13 @@
 | [Screenshots](screenshots.md) | GPMC and Intune screenshots showing policy configuration |
 | [Changelog](changelog.md) | Settings changes across ADMX versions |
 
-These user-scope ADMX/ADML templates (v1.5) provide Group Policy and Intune management of **per-user** Adobe Acrobat DC and Adobe Reader DC preferences on Windows. They define `HKCU` policies (see `AdobeDC_User.admx` / `AdobeDC_User.adml`), not machine-level `HKLM` lockable templates.
+These user-scope ADMX/ADML templates (v1.6) provide Group Policy and Intune management of **per-user** Adobe Acrobat DC and Adobe Reader DC preferences on Windows. They define `HKCU` policies (see `AdobeDC_User.admx` / `AdobeDC_User.adml`), not machine-level `HKLM` lockable templates.
 
 Policy list pages and the hardening / reduce-nags guides use the **GoodSetting** column from the HKCU preference source used to build these templates: **Set to Enabled** or **Set to Disabled** refers to the Group Policy policy state, mapping to the per-policy ``RegValEnabled`` / ``RegValDisabled`` DWORDs.
 
 | ![File](https://img.shields.io/badge/File-316dca?style=flat-square) | ![Scope](https://img.shields.io/badge/Scope-316dca?style=flat-square) | ![Policies](https://img.shields.io/badge/Policies-316dca?style=flat-square) |
 |------|-------|----------|
-| `AdobeDC_User.admx` + ADML | User (`HKCU`) - Acrobat DC + Reader DC | 484 REG_DWORD (250 Acrobat + 234 Reader) |
+| `AdobeDC_User.admx` + ADML | User (`HKCU`) - Acrobat DC + Reader DC | 495 REG_DWORD (255 Acrobat + 240 Reader) |
 
 ## Important Notes
 
@@ -36,8 +36,9 @@ Policy list pages and the hardening / reduce-nags guides use the **GoodSetting**
 |----------|----------|:------:|:-------:|
 | Context, Tools & Search | Cursor and selection tools, hand-tool behavior, filename-as-title, recent files, Modern Viewer/HUD, search, and workflow UI preferences under HKCU. | 19 | 22 |
 | Documents, Editing & Accessibility | Page display, zoom and layout defaults, rendering and fonts, commenting, forms, measurement, accessibility color replacement, and editing-related user preferences. | 86 | 89 |
-| Security: Execution & Protection | User-level execution controls such as 3D/multimedia trust, JavaScript debugger and menu behavior, FIPS mode, and related HKCU security execution settings. | 7 | 13 |
-| Security: Trust & Permissions | Digital signatures, certificate and timestamp validation, OCSP/CRL behavior, trust-manager URL permissions, and other HKCU signing and trust preferences. | 71 | 72 |
+| Microsoft Purview (MIP) | Per-user Microsoft Purview Information Protection (MIP) preferences under HKCU MicrosoftAIP, including document message bar visibility, policy authentication, and debug logging. | 3 | 3 |
+| Security: Execution & Protection | User-level execution controls such as 3D/multimedia trust, JavaScript debugger and menu behavior, FIPS mode, and related HKCU security execution settings. | 8 | 13 |
+| Security: Trust & Permissions | Digital signatures, certificate and timestamp validation, OCSP/CRL behavior, trust-manager URL permissions, and other HKCU signing and trust preferences. | 73 | 74 |
 | Sharing & Features | Collaboration, Send & Track, shared reviews, cloud sharing hooks, and related feature toggles stored as per-user preferences. | 9 | 11 |
 | Startup & Experience | Splash screen, launch alerts, onboarding and What's New dialogs, home-screen widgets, notifications, and first-run experience controls. | 29 | 29 |
 | Updates & Desktop Integration | Product updater behavior, browser and Fast Web View integration, background download, thumbnails/shell integration, and desktop UI preferences. | 11 | 11 |
