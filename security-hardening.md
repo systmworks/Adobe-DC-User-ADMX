@@ -6,7 +6,7 @@
 
 # Security Hardening Guide
 
-Recommended and optional security-related **Group Policy** states for the v1.4 user (`HKCU`) ADMX templates. Rows are generated from the **GoodSetting** column in the preference source for these templates, using each policy's `RegValEnabled` / `RegValDisabled` mapping.
+Recommended and optional security-related **Group Policy** states for the v1.5 user (`HKCU`) ADMX templates. Rows are generated from the **GoodSetting** column in the preference source for these templates, using each policy's `RegValEnabled` / `RegValDisabled` mapping.
 
 These complement (but do not replace) Adobe's own [Application Security Guide](https://www.adobe.com/devnet-docs/acrobatetk/tools/AppSec/index.html).
 

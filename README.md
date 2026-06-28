@@ -15,7 +15,7 @@
 | [Screenshots](screenshots.md) | GPMC and Intune screenshots showing policy configuration |
 | [Changelog](changelog.md) | Settings changes across ADMX versions |
 
-These user-scope ADMX/ADML templates (v1.4) provide Group Policy and Intune management of **per-user** Adobe Acrobat DC and Adobe Reader DC preferences on Windows. They define `HKCU` policies (see `AdobeDC_User.admx` / `AdobeDC_User.adml`), not machine-level `HKLM` lockable templates.
+These user-scope ADMX/ADML templates (v1.5) provide Group Policy and Intune management of **per-user** Adobe Acrobat DC and Adobe Reader DC preferences on Windows. They define `HKCU` policies (see `AdobeDC_User.admx` / `AdobeDC_User.adml`), not machine-level `HKLM` lockable templates.
 
 Policy list pages and the hardening / reduce-nags guides use the **GoodSetting** column from the HKCU preference source used to build these templates: **Set to Enabled** or **Set to Disabled** refers to the Group Policy policy state, mapping to the per-policy ``RegValEnabled`` / ``RegValDisabled`` DWORDs.
 
