@@ -6,7 +6,7 @@
 
 # Acrobat DC Settings
 
-Complete list of 255 Acrobat DC user (`HKCU`) policies in the v1.6 `AdobeDC_User` ADMX templates, sorted by category. **Suggested GPO** reflects the **GoodSetting** value from the same preference source where present.
+Complete list of 257 Acrobat DC user (`HKCU`) policies in the v1.10 `AdobeDC_User` ADMX templates, sorted by category. **Suggested GPO** reflects the **GoodSetting** value from the same preference source where present.
 
 ## Context, Tools & Search
 
@@ -189,6 +189,8 @@ Complete list of 255 Acrobat DC user (`HKCU`) policies in the v1.6 `AdobeDC_User
 | Import Windows Certs | ``bCertStoreImportEnable`` |   | If true, then users can import from MSCAPI certificate stores into their Trusted Identity Manager. |
 | Keep Hidden Content | ``bDontRemoveOverlapping`` |   | Remove hidden content when sanitizing a document. |
 | Last Sig Appearance | ``iAPIndex`` |   | Remembers the last used signature appearance index. |
+| Load Security Settings from Server (Adobe Certificates) | ``bLoadSettingsFromURL`` | Set to ![Disabled](https://img.shields.io/badge/Disabled-f85149?style=flat-square) | Controls whether trust anchors are periodically downloaded from Adobe's certificate server. |
+| Load Security Settings from Server (European Certificates) | ``bLoadSettingsFromURL`` | Set to ![Disabled](https://img.shields.io/badge/Disabled-f85149?style=flat-square) | Controls whether trust anchors are periodically downloaded from the European Union Trusted Lists (EUTL) server. |
 | Long Term Validation | ``bIsEnabled`` |   | Specifies whether the signature revocation status is included in the signature. |
 | Max Rev Info Archive | ``iMaxRevInfoArchiveSize`` |   | The maximum size of the revocation archival information in kilobytes. |
 | Max Verify Sessions | ``iMaxVerifySession`` |   | Specifies the maximum number of nested verification sessions allowed. |

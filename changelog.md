@@ -10,6 +10,89 @@ Settings changes across User ADMX versions. Only new, renamed, or reclassified s
 
 ---
 
+## v1.10 — 1 Jul 2026
+
+**501 policies** (258 Acrobat DC + 243 Reader DC) — same inventory as v1.9.
+
+### `(User)` suffix on all leaf display names
+
+Every policy ADML display string gains ` (User)` (e.g. `Show Splash Screen` → `Show Splash Screen (User)`). Matches Microsoft convention for user-scope administrative templates. Helps IT admins tell user vs machine Adobe settings apart when both are in the same Intune profile — imported ADMX does not show hive or category path in the configuration list.
+
+Same namespace, files, registry keys, and ADMX `name` attributes as v1.9. Validated Intune import after delete-and-reupload workflow.
+
+See [readme in v1.10 (User)](../v1.10%20(User)/readme.md).
+
+| ADMX File | Policies |
+|---|---:|
+| `AdobeDC_User.admx` + ADML | 501 |
+
+---
+
+## v1.9 — 30 Jun 2026
+
+**501 policies** (258 Acrobat DC + 243 Reader DC) — unchanged from v1.8. **Superseded by v1.10** for new deployments.
+
+### Category layout for Intune
+
+Category folders restructured to **`Adobe (User)`** → **`Acrobat DC`** / **`Reader DC`** (product branches no longer repeat `(User)`).
+
+ADML strings are sanitized for Intune (no bare `http://` literals in policy text; empty explain strings get a fallback). Leaf display names have no scope suffix (use v1.10 for `(User)` on all settings).
+
+See [readme in v1.9 (User)](../v1.9%20(User)/readme.md).
+
+| ADMX File | Policies |
+|---|---:|
+| `AdobeDC_User.admx` + ADML | 501 |
+
+---
+
+## v1.8 — 30 Jun 2026
+
+**501 policies** (258 Acrobat DC + 243 Reader DC). **Superseded by v1.10** for new deployments.
+
+### PR #9 user-scope policy additions
+
+**New DWORD toggles** under **Security: Trust & Permissions** (Acrobat + Reader):
+
+| Setting | ValueName | Suggested hardening |
+|---|---|---|
+| Load Security Settings from Server (Adobe Certificates) | `bLoadSettingsFromURL` @ `cAdobeDownload` | Disabled |
+| Load Security Settings from Server (European Certificates) | `bLoadSettingsFromURL` @ `cEUTLDownload` | Disabled |
+
+**New text policy** — companion to existing **`iURLPerms`**:
+
+| Setting | ValueName | Notes |
+|---|---|---|
+| Trusted/Blocked URL List | `tHostPerms` | REG_SZ text box; only applies when `iURLPerms` = Custom Setting (0) |
+
+*Thanks to **[@virtitnerd](https://github.com/virtitnerd)** for [PR #9](https://github.com/systmworks/Adobe-DC-ADMX/pull/9) on the Computer ADMX repo.*
+
+See [readme in v1.8 (User)](../v1.8%20(User)/readme.md).
+
+| ADMX File | Policies |
+|---|---:|
+| `AdobeDC_User.admx` + ADML | 501 |
+
+---
+
+## v1.7 — 30 Jun 2026
+
+**495 policies** (255 Acrobat DC + 240 Reader DC) — unchanged from v1.6.
+
+### Policy class corrected to `User`
+
+All user-scope policies now use `class="User"` instead of `class="Both"`. Earlier releases used `class="Both"` based on outdated Intune guidance; policies incorrectly appeared under **Computer Configuration** as well as User Configuration. v1.7 restricts them to **User Configuration** only, which is the correct scope for HKCU preference settings.
+
+*Thanks to **[@virtitnerd](https://github.com/virtitnerd)** for identifying this during review of [PR #9](https://github.com/systmworks/Adobe-DC-ADMX/pull/9) on the Computer ADMX repo.*
+
+See [readme in v1.7 (User)](../v1.7%20(User)/readme.md).
+
+| ADMX File | Policies |
+|---|---:|
+| `AdobeDC_User.admx` + ADML | 495 |
+
+---
+
 ## v1.6 — 28 Jun 2026
 
 **495 policies** (255 Acrobat DC + 240 Reader DC), up from 484 in v1.5.
