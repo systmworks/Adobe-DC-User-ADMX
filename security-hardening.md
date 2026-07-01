@@ -6,14 +6,14 @@
 
 # Security Hardening Guide
 
-Recommended and optional security-related **Group Policy** states for the v1.10 user (`HKCU`) ADMX templates. Rows are generated from the **GoodSetting** column in the preference source for these templates, using each policy's `RegValEnabled` / `RegValDisabled` mapping.
+Recommended and optional security-related **Group Policy** states for the v1.10 user (`HKCU`) ADMX templates. **Curated subset** - only policies with a **GoodSetting** value in the preference source (not all 501 ADMX policies).
 
 These complement (but do not replace) Adobe's own [Application Security Guide](https://www.adobe.com/devnet-docs/acrobatetk/tools/AppSec/index.html).
 
 - ![Recommended](https://img.shields.io/badge/Recommended-238636?style=flat-square) - DISA STIG-aligned or broadly advisable; verify against your STIG baseline.
 - ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) - additional hardening without a STIG cross-reference in the source data; may affect workflows.
 
-## Reader DC
+## Reader DC (12 suggested settings)
 
 | ![Category](https://img.shields.io/badge/Category-316dca?style=flat-square) | ![FriendlyName](https://img.shields.io/badge/FriendlyName-316dca?style=flat-square) | ![Path](https://img.shields.io/badge/Path-316dca?style=flat-square) | ![Suggested GPO](https://img.shields.io/badge/Suggested%20GPO-316dca?style=flat-square) | ![Notes](https://img.shields.io/badge/Notes-316dca?style=flat-square) | ![Priority](https://img.shields.io/badge/Priority-316dca?style=flat-square) |
 |---|---|---|---|---|---|
@@ -30,7 +30,7 @@ These complement (but do not replace) Adobe's own [Application Security Guide](h
 | Security: Trust & Permissions | Open Non-PDF Attachments | ``DC\Originals`` | Set to ![Disabled](https://img.shields.io/badge/Disabled-f85149?style=flat-square) |   | ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) |
 | Security: Trust & Permissions | Secure Open Attachments | ``DC\Originals`` | Set to ![Enabled](https://img.shields.io/badge/Enabled-238636?style=flat-square) |   | ![Optional](https://img.shields.io/badge/Optional-1f6feb?style=flat-square) |
 
-## Acrobat DC
+## Acrobat DC (12 suggested settings)
 
 | ![Category](https://img.shields.io/badge/Category-316dca?style=flat-square) | ![FriendlyName](https://img.shields.io/badge/FriendlyName-316dca?style=flat-square) | ![Path](https://img.shields.io/badge/Path-316dca?style=flat-square) | ![Suggested GPO](https://img.shields.io/badge/Suggested%20GPO-316dca?style=flat-square) | ![Notes](https://img.shields.io/badge/Notes-316dca?style=flat-square) | ![Priority](https://img.shields.io/badge/Priority-316dca?style=flat-square) |
 |---|---|---|---|---|---|

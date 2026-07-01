@@ -6,7 +6,7 @@
 
 # Acrobat DC Settings
 
-Complete list of 257 Acrobat DC user (`HKCU`) policies in the v1.10 `AdobeDC_User` ADMX templates, sorted by category. **Suggested GPO** reflects the **GoodSetting** value from the same preference source where present.
+Complete list of **257** Acrobat DC **REG_DWORD** policies in the v1.10 `AdobeDC_User` ADMX templates, sorted by category (**258** shipped including `tHostPerms` text policy). **Suggested GPO** reflects the **GoodSetting** value from the same preference source where present.
 
 ## Context, Tools & Search
 

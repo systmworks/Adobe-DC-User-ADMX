@@ -6,9 +6,9 @@
 
 # Reduce Nags, Upsells & Unwanted Notifications
 
-Suggested **Group Policy** states to reduce onboarding prompts, tooltips, upsells, and similar UI noise in the v1.10 user (`HKCU`) ADMX templates. Rows come from the **GoodSetting** column in the preference source for non-security categories.
+Suggested **Group Policy** states to reduce onboarding prompts, tooltips, upsells, and similar UI noise in the v1.10 user (`HKCU`) ADMX templates. **Curated subset** - non-security policies with a **GoodSetting** value only (not all 501 ADMX policies).
 
-## Reader DC
+## Reader DC (17 suggested settings)
 
 | ![Category](https://img.shields.io/badge/Category-316dca?style=flat-square) | ![FriendlyName](https://img.shields.io/badge/FriendlyName-316dca?style=flat-square) | ![Path](https://img.shields.io/badge/Path-316dca?style=flat-square) | ![Suggested GPO](https://img.shields.io/badge/Suggested%20GPO-316dca?style=flat-square) |
 |---|---|---|---|
@@ -30,7 +30,7 @@ Suggested **Group Policy** states to reduce onboarding prompts, tooltips, upsell
 | Upsell | Acrobat App Promo | ``cServices\cAcrobatApp`` | Set to ![Disabled](https://img.shields.io/badge/Disabled-f85149?style=flat-square) |
 | Upsell | Scan App Promo | ``cServices\cScanApp`` | Set to ![Disabled](https://img.shields.io/badge/Disabled-f85149?style=flat-square) |
 
-## Acrobat DC
+## Acrobat DC (19 suggested settings)
 
 | ![Category](https://img.shields.io/badge/Category-316dca?style=flat-square) | ![FriendlyName](https://img.shields.io/badge/FriendlyName-316dca?style=flat-square) | ![Path](https://img.shields.io/badge/Path-316dca?style=flat-square) | ![Suggested GPO](https://img.shields.io/badge/Suggested%20GPO-316dca?style=flat-square) |
 |---|---|---|---|

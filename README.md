@@ -14,17 +14,17 @@
 | [Reduce Nags & Upsells](reduce-nags.md) | Settings to suppress unwanted messages, popups, and promotions |
 | [Screenshots](screenshots.md) | GPMC and Intune screenshots showing policy configuration |
 | [Changelog](changelog.md) | Settings changes across ADMX versions |
-| [v1.10 release readme](../v1.10%20(User)/readme.md) | Current production bundle — upload and namespace details |
+| [v1.10 release readme](../v1.10%20(User)/readme.md) | Current production bundle - upload and namespace details |
 
 These user-scope ADMX/ADML templates (**v1.10**) provide Group Policy and Intune management of **per-user** Adobe Acrobat DC and Adobe Reader DC preferences on Windows. They define `HKCU` policies (see `AdobeDC_User.admx` / `AdobeDC_User.adml` in the **v1.10 (User)** release folder), not machine-level `HKLM` lockable templates.
 
 **Intune display names:** v1.10 appends ` (User)` to every leaf policy name in ADML (Microsoft convention), so admins can tell user vs machine settings apart in mixed profiles. The policy tables below use Adobe PrefRef **friendly names** without that suffix.
 
-Policy list pages and the hardening / reduce-nags guides use the **GoodSetting** column from the HKCU preference source used to build these templates: **Set to Enabled** or **Set to Disabled** refers to the Group Policy policy state, mapping to the per-policy ``RegValEnabled`` / ``RegValDisabled`` DWORDs.
+Policy list pages document **REG_DWORD** toggles only (**257** Acrobat + **242** Reader = **499** rows). The shipped ADMX bundle adds **`tHostPerms`** text policies (Acrobat + Reader) for **501** total. Security hardening and reduce-nags list **curated** subsets with a **GoodSetting** value - not every policy.
 
 | ![File](https://img.shields.io/badge/File-316dca?style=flat-square) | ![Scope](https://img.shields.io/badge/Scope-316dca?style=flat-square) | ![Policies](https://img.shields.io/badge/Policies-316dca?style=flat-square) |
 |------|-------|----------|
-| `AdobeDC_User.admx` + ADML | User (`HKCU`) — Acrobat DC + Reader DC | **501** (258 Acrobat + 243 Reader; includes `tHostPerms` text policy) |
+| `AdobeDC_User.admx` + ADML | User (`HKCU`) - Acrobat DC + Reader DC | **501** (258 Acrobat + 243 Reader) |
 
 ## Important Notes
 
