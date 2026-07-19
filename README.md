@@ -3,8 +3,10 @@
 > I have spent many, many hours creating and testing this ADMX. If it helps you please consider buying me a Coffee :)
 
 # Adobe DC ADMX/ADML Documentation
-**IMPORTANT NOTE** - USER SETTINGS HAVE NOW BEEN ROLLED INTO MAIN COMPUTER SETTINGS ADMX - NO NEED TO USE THIS SEPARTE USER ADMX.
-USE V3.0 OR LATER FROM https://github.com/systmworks/Adobe-DC-ADMX 
+> [!WARNING]
+> USER SETTINGS HAVE NOW BEEN ROLLED INTO MAIN COMPUTER SETTINGS ADMX - NO NEED TO USE THIS SEPARTE USER ADMX.
+> 
+> USE V3.0 OR LATER FROM https://github.com/systmworks/Adobe-DC-ADMX 
 
 ## Quick Links
 
